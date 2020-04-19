@@ -3,6 +3,7 @@
 import os
 import sys
 
+#psswd 123456789
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'news.settings')
