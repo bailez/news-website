@@ -12,5 +12,7 @@ def year_archive(request, year):
 
 def reporter(request, report):
     a_list = Article.objects.filter(reporter=report)
+    print('a')
+    print(a_list)
     context = {'reporter' : report, 'article_list' : a_list}
-    return rendre(request, 'news/reporter.html',context)
+    return render(request, 'news/reporter.html',context)
