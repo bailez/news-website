@@ -1,7 +1,10 @@
 from django.contrib import admin
 from django.urls import include, path
 
+from articles import views
+
 urlpatterns = [
-    path('articles/', include('articles.urls')),
+    path('articles/', views.articles),
+    path('articles/<int:year>/', views.year_archive),
     path('admin/', admin.site.urls),
 ]

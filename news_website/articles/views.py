@@ -1,11 +1,8 @@
-import django
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Article
 
-django.setup()
-
-def index(request):
+def articles(request):
     return HttpResponse("Hello World!")
 
 def year_archive(request, year):
