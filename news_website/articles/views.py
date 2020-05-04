@@ -16,3 +16,6 @@ def reporter(request, report):
     print(a_list)
     context = {'reporter' : report, 'article_list' : a_list}
     return render(request, 'news/reporter.html',context)
+
+def home(request):
+    return render(request,'main/main.html')
